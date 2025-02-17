@@ -5,13 +5,13 @@ import Bloghome from './Components/Bloghome';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; 
 
+import BlogCard from './Components/CardOne';
 import Cardtwo from './Components/Cardtwo';
 import Cardthree from './Components/Cardthree';
 import Middlebanner from './Components/Middlebanner';
 import Destination from './Components/Destination';
 import Category from './Components/Category';
 import Footer from './Components/Footer';
-import BlogCard from './Components/Cardone';
 
 
 
