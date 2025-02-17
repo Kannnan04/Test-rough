@@ -1,0 +1,265 @@
+/* Hero Section with Fixed Width and Height */
+.hero-container {
+    width: 2048px;
+    max-width: 100%;
+    height: 900px;
+    max-height: 100vh;
+
+    background: url("https://images.unsplash.com/photo-1557285986-7ea70a88b557?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center center/cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    color: rgb(255, 253, 253);
+    padding-top: 80px;
+    margin: 0 auto;
+}
+
+.hero-content .content {
+    margin-top: 200px;
+}
+
+.hero-content .hero-btn {
+    border-radius: 5px;
+    padding: 10px;
+    width: 250px;
+    font-weight: 600;
+}
+
+/* Navbar Styling */
+
+.navbar {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* Navbar Brand */
+.container-fluid .navbar-brand {
+    color: white;
+    font-size: larger;
+    font-style: italic;
+}
+
+/* Center Navbar Items */
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-item .nav-link {
+    color: white !important;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Navbar Link Hover Effect */
+.navbar-nav .nav-item .nav-link:hover {
+    color: rgb(100, 100, 97) !important;
+}
+
+/* Search Bar */
+.form-control {
+    background-color: black !important;
+    /* Black input field */
+    color: white !important;
+    border: 2px solid white;
+    transform: translateX(10px);
+}
+
+/* Placeholder Text */
+.form-control::placeholder {
+    color: white !important;
+    opacity: 1;
+    /* transform: translateX(10px); */
+}
+
+/* Search Icon */
+.search-icon {
+    padding-right: 10px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+/* logo section */
+
+.logo-section {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: -100px;
+    /* Black background */
+}
+
+.logo-list li {
+    display: flex;
+    gap: 20px;
+    /* Space between items */
+    list-style: none;
+    padding-left: -260px;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    /* Changed to row for horizontal alignment */
+    gap: 15px;
+    /* Space between items */
+}
+
+
+/* Logo Links */
+.logo-list .nav-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.facebook {
+    color: black;
+    font-size: 25px;
+    margin-top: 10px;
+
+}
+
+.insta {
+    color: black;
+    font-size: 25px;
+    margin-top: 10px;
+
+
+}
+
+.twitter {
+    color: black;
+    font-size: 25px;
+    margin-top: 10px;
+
+
+}
+
+.youtube {
+    color: black;
+    font-size: 25px;
+    margin-top: 10px;
+
+}
+
+.logo-list li {
+    color: black;
+    margin-left: -10px;
+    font-size: 20px;
+}
+
+
+/* Responsive Fixes */
+@media (max-width: 992px) {
+    .hero-container {
+        height: auto;
+        width: auto
+            /* Adjust height for mobile */
+            /* padding: 60px 20px; */
+            /* Prevent content overflow */
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 24px;
+        /* Reduce title size */
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.8);
+        /* Darker background for mobile */
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .d-flex {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .form-control {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo {
+        bottom: 10px;
+        right: 10px;
+        padding: 8px;
+        font-size: 16px;
+    }
+}
+
+/* logo section */
+@media (max-width: 1024px) {
+    .logo-list {
+        flex-direction: row;
+        /* Stack icons on small screens */
+        text-align: center;
+        gap: 0px;
+    
+    }
+ 
+    .logo-list .facebook,
+    .logo-list .insta,
+    .logo-list .twitter,
+    .logo-list .youtube {
+        font-size: 20px;
+        margin-top: -130px
+            /* Reduce icon size */
+    }
+
+    .logo-list .nav-item {
+        margin-top: -140px;
+        /* background-color: blue; */
+        height: 30px;
+    }
+
+   
+    .logo-list .nav-item .nav-link {
+        font-size: 16px;
+        /* Reduce text size */
+    }
+}

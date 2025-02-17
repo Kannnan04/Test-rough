@@ -1,0 +1,84 @@
+/* Footer Container */
+.footer {
+    background: black;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Left Side Text */
+.footer-left p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.xp-design {
+    font-weight: bold;
+}
+
+/* Right Side Social Icons */
+.footer-right {
+    display: flex;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-icons svg {
+    font-size: 16px;
+}
+
+/* Scroll to Top Button */
+.scroll-top {
+    background: gray;
+    border: none;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.scroll-top svg {
+    color: white;
+    font-size: 18px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-right {
+        justify-content: center;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

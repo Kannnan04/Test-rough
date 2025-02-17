@@ -1,0 +1,142 @@
+/* Blog Card Styling */
+.container-two {
+    max-width: 1700px;
+    margin-top: -30px;
+    /* Adjust row width */
+    margin-left: 90px;
+    /* background-color: rgb(224, 185, 134); */
+    /* Add extra padding */
+}
+
+.blog-card {
+    background: #fdfcfc;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin-bottom: 30px;
+
+}
+
+/* Image Section */
+.image-container {
+    position: relative;
+}
+
+.image {
+    margin-left: 250px;
+    background: transparent;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Overlay Tags */
+.overlay-tags {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.tag {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Blog Title */
+.blog-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Author & Date Section */
+.blog-meta {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0;
+}
+
+.blog-meta .icon {
+    font-size: 16px;
+    color: black;
+    margin-right: 5px;
+}
+
+.author {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.date {
+    margin-right: 10px;
+}
+
+/* Description */
+.blog-description {
+    font-size: 14px;
+    color: gray;
+}
+
+/* View Post Link */
+.view-post {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .container-two {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px
+    }
+
+    .blog-card {
+        width: 90%; /* Make cards take up more space */
+    }
+
+    .overlay-tags {
+        top: 5px;
+        left: 5px;
+        flex-wrap: wrap;
+    }
+
+    .tag {
+        font-size: 12px;
+        padding: 3px 8px;
+    }
+
+    /* Image Section */
+    .image {
+        margin-left: 0; /* Remove unnecessary left margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-card {
+        width: 100%;
+    }
+
+    .blog-meta {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container {
+        text-align: center;
+    }
+}
