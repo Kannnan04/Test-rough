@@ -8,30 +8,24 @@ import { faFacebook, faInstagram, faTwitter, faYoutube } from "@fortawesome/free
 
 
 const Bloghome = () => {
-    // State to control navbar collapse
     const [isOpen, setIsOpen] = useState(false);
 
-    // Function to toggle navbar
     const toggleNavbar = () => {
         setIsOpen(!isOpen);
     };
 
     return (
         <div className="hero-container">
-            {/* Navbar inside the background */}
-
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid">
-                    {/* Brand Name */}
-
                     <a className="navbar-brand" href="#">Inspiration by Trazler</a>
 
-                    {/* Navbar Toggler Button */}
+                    {/* Navbar Toggler */}
 
                     <button
                         className="navbar-toggler"
                         type="button"
-                        onClick={toggleNavbar} // Toggle function
+                        onClick={toggleNavbar} 
                         aria-controls="navbarNav"
                         aria-expanded={isOpen}
                         aria-label="Toggle navigation"
@@ -39,7 +33,7 @@ const Bloghome = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    {/* Navbar Collapse */}
+                    {/* Navbar  */}
 
                     <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
                         <ul className="navbar-nav mx-auto">

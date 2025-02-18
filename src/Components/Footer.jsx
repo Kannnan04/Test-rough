@@ -9,12 +9,12 @@ const Footer = () => {
         <footer className="footer">
             <div className="container">
                 <div className="footer-content">
-                    {/* Left Section */}
                     <div className="footer-left">
                         <p>Designed & Developed by <span className="xp-design">XP DESIGN</span></p>
                     </div>
 
-                    {/* Right Section - Social Icons */}
+                    {/* Right Section */}
+
                     <div className="footer-right">
                         <div className="social-icons">
                             <div><FaFacebookF /><span>29</span></div>
@@ -25,7 +25,6 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {/* Scroll to Top Button */}
                     <button className="scroll-top" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                         <IoIosArrowUp />
                     </button>
